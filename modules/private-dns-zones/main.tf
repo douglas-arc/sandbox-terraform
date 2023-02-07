@@ -1,5 +1,6 @@
 locals {
-  path_to_dns_config = "../dns-config/"
+  # path_to_dns_config = "../dns-config/"
+  path_to_dns_config = "../"
 
   records = yamldecode(file("${local.path_to_dns_config}${var.zone_file}"))
 }
